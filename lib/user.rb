@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
   has_many :lists
   has_many :items, through: :lists
 
+  def make_list(title)
+    List.create!(title: title)
+  end
+
 end

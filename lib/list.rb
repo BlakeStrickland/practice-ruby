@@ -4,4 +4,9 @@ class List < ActiveRecord::Base
   belongs_to :user
   has_many :items
 
+  def add_item name, due_date: nil
+    items.create! name: name, due_date: due_date
+
+  end
+
 end
