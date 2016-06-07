@@ -1,0 +1,23 @@
+Git stuff
+git rid of commits
+
+git checkout -b hangman
+git push -u origin master
+git push --force origin master  #double check this
+
+
+begin
+  1 / 0
+rescue => e
+  puts e
+end
+
+
+begin
+  loop do
+    puts "tick"
+    sleep 1
+  end
+rescue Interrupt => e
+  puts e
+end
